@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Server</title>
+</head>
+<body>
+    <form action="" id="POST">
+        <input type="file" name="file">
+        <input type="submit" value="Загрузить">
+    </form>
+    <form action="" id="DELETE">
+        <input type="file" name="file" placeholder="filename.ext">
+        <input type="submit" value="Удалить">
+    </form>
+    <form action="" id="GET">
+        <input type="file" name="file" placeholder="filename.ext">
+        <input type="submit" value="Загрузить">
+    </form>
+    <script>
+        document.onsubmit = function(event){
+            event.preventDefault();
+        }
+        const form = event.target;
+        if( !form.file.value ){
+            return;
+        }
+
+       // const fileUrl = '/' + from.file.value.replacr
+    </script>
+</body>
+</html>
